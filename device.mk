@@ -14,9 +14,20 @@
 # limitations under the License.
 #
 
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.carrier=wifi-only
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml
 
+# Rild
+PRODUCT_PACKAGES += \
+    rild \
+    CarrierConfig \
+    BasicSmsReceiver
+
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+    
 # Camera
 PRODUCT_PACKAGES += \
     camera.flox

@@ -154,7 +154,7 @@
     <bool name="config_voice_capable">false</bool>
 
     <!-- This device does not allow sms service. -->
-    <bool name="config_sms_capable">false</bool>
+    <bool name="config_sms_capable">true</bool>
 
     <!-- This string array should be overridden by the device to present a list of radio
          attributes.  This is used by the connectivity manager to decide which networks can coexist
@@ -189,7 +189,7 @@
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
 
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
-    <bool name="config_cellBroadcastAppLinks">false</bool>
+    <bool name="config_cellBroadcastAppLinks">true</bool>
 
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">600</integer>

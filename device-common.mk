@@ -15,6 +15,7 @@
 #
 
 $(call inherit-product, vendor/asus/flox/flox-vendor.mk)
+$(call inherit-product, vendor/asus/debx/debx-vendor.mk)
 
 # This device is xhdpi.  However the platform doesn't
 # currently contain all of the bitmaps at xhdpi density so
